@@ -43,6 +43,10 @@ public class Lista {
         
     }
 
+    public void inserIndice(){
+        
+        
+    }
     
     
     
