@@ -24,18 +24,26 @@ public class Lista {
     }
         nodoRecorre.siguiente = nodoFin;     
     }   
-    // nodo que este entre el inicio y final
+
+    
+       /*
+/ nodo que este entre el inicio y final
     
     public void middle(int dato) {
-   
+   */     
         
+ 
+    public void imprimirLista(){
+        Nodo nodoRecorre = cabeza;
+    while (nodoRecorre != null){
+        System.out.println(nodoRecorre.dato + "->");
+        nodoRecorre = nodoRecorre.siguiente;
+    }
+        System.out.println("NULL");       
         
-             
     }
 
-
-
-
+    
+    
     
 }
-
