@@ -12,6 +12,8 @@ public class EnlazadaSimple {
         listica.insertarNodoInicio(2);
         listica.insertarNodoFinal(4);
         listica.imprimirLista();
+        listica.inserIndice(1,2);
+        
         
         
         
