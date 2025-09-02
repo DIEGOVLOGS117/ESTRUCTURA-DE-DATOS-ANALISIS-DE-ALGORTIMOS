@@ -5,10 +5,10 @@ public class Lista {
     private Nodo cabeza;
 
     public Lista() {
-        this.cabeza = null; // si se pierde cabeza se pierde todo 
+        this.cabeza = null; // aqui la lista esta vacia / si se pierde cabeza se pierde todo 
     }
        
-    public void insertarNodoInicio(int dato){
+    public void insertarNodoInicio(int dato){  // ingresamos el primer dato
     Nodo nodoIni = new Nodo (dato);
     nodoIni.siguiente = cabeza;
     cabeza = nodoIni;
@@ -43,7 +43,11 @@ public class Lista {
         
     }
 
-    public void inserIndice(){
+    public void inserIndice(int dato, int idx){
+        Nodo nodoIndice = new Nodo (dato);
+        Nodo nodoRecorre = cabeza;
+        
+        int cont = 0;
         
         
     }
