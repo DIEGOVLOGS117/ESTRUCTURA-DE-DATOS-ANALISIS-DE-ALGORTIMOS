@@ -14,14 +14,28 @@ public class Lista {
     cabeza = nodoIni;
     }     
     
-    public void NuevosNodos(int dato){
-        Nodo noditonext = new Nodo (dato);
-       
-        
-        
-    }   
+    public void insertarNodoFinal(int dato) {
     
-            
-            
+    Nodo nodoFin = new Nodo(dato);    
+    Nodo nodoRecorre = cabeza;
+    
+    while(nodoRecorre.siguiente != null){
+        nodoRecorre = nodoRecorre.siguiente;
+    }
+        nodoRecorre.siguiente = nodoFin;     
+    }   
+    // nodo que este entre el inicio y final
+    
+    public void middle(int dato) {
+   
+        
+        
+             
+    }
+
+
+
+
+    
 }
 
