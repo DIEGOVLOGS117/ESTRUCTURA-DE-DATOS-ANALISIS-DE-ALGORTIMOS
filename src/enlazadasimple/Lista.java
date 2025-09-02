@@ -4,7 +4,7 @@ public class Lista {
     
     private Nodo cabeza;
 
-    public Lista(Nodo cabeza) {
+    public Lista() {
         this.cabeza = null; // si se pierde cabeza se pierde todo 
     }
        
