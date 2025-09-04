@@ -3,9 +3,13 @@ package enlazadasimple;
 public class Lista {
     
     private Nodo cabeza;
-
+    public int tamaño;
+    private Nodo cola;
+    
     public Lista() {
         this.cabeza = null; // aqui la lista esta vacia / si se pierde cabeza se pierde todo 
+        this.tamaño = 0;
+        this.cola = null;
     }
        
     public void insertarNodoInicio(int dato){  // ingresamos el primer dato
@@ -48,15 +52,39 @@ public class Lista {
         int cont = 0;        
     }
     
-    public void eliminarInicioElemento(int dato, int idx) {
-        Nodo nodoEliminado = new Nodo (dato);
+    // primera opcion 
+    public void eliminarInicioElemento() {  // es para Ahorrar memoria borrando copias ya realizadas
+        Nodo inicio = cabeza;
+        cabeza = cabeza.siguiente;
+        inicio.siguiente = null; // rompe enlace
+        tamaño--;
         
+    }
+    
+    /* este es el metodo 2 public void eliminarNodoInicio (){
+    cabeza = cabeza.siguiente;
+    tamaño --; */
+
+    public int getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(int tamaño) {
+        this.tamaño = tamaño;
+    }
+    
+/*     public boolean verificadorPromax(){
         
+        if (cabeza == null) 
+    }
+    */
+    
+    
+    public void eliminarFinalElemento(){
+        nodo final = ;
         
         
         
     }
-    
-    
     
 }
