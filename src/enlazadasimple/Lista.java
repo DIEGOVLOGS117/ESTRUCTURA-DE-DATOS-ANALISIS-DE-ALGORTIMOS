@@ -81,7 +81,9 @@ public class Lista {
         
         return false;  
         
-        /* LISTAS ENLAZADAS SIMPLES CORREGIR Y ESTUDIAR PARA LUEGO EMPEZAR A LAS DOBLES */
+        /* LISTAS ENLAZADAS SIMPLES CORREGIR Y ESTUDIAR PARA LUEGO EMPEZAR A LAS DOBLES 
+        https://youtu.be/f_JpVRrPUFo?si=XIofVaOqhuhxjmZW
+        */
         
         
     }
@@ -94,3 +96,4 @@ public class Lista {
     
 
 }
+
