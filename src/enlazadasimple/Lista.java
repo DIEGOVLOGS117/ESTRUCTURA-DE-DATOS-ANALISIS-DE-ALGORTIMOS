@@ -81,7 +81,7 @@ public class Lista {
         
         return false;  
         
-        
+        /* LISTAS ENLAZADAS SIMPLES CORREGIR Y ESTUDIAR PARA LUEGO EMPEZAR A LAS DOBLES */
         
         
     }
@@ -92,4 +92,5 @@ public class Lista {
     
     
     
+
 }
