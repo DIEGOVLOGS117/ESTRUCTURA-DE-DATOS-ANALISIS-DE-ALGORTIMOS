@@ -69,19 +69,15 @@ public class Lista {
         return tamaño;
     }
 
-    public void setTamaño(int tamaño) {
-        this.tamaño = tamaño;
-    }
-    
-/*     public boolean verificadorPromax(){
-        
+    /* public boolean verificadorPromax(){
         if (cabeza == null) 
-    }
-    */
-    
+    } */
     
     public void eliminarFinalElemento(){
-
+        
+        if (cabeza == null){
+            return;
+        }
         
         
         
