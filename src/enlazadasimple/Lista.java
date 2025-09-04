@@ -81,7 +81,7 @@ public class Lista {
     
     
     public void eliminarFinalElemento(){
-        nodo final = ;
+
         
         
         
