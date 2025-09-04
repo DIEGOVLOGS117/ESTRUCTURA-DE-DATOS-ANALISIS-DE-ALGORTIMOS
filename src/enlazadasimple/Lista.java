@@ -45,7 +45,13 @@ public class Lista {
         Nodo nodoIndice = new Nodo (dato);
         Nodo nodoRecorre = cabeza;
         
-        int cont = 0;
+        int cont = 0;        
+    }
+    
+    public void eliminarInicioElemento(int dato, int idx) {
+        Nodo nodoEliminado = new Nodo (dato);
+        
+        
         
         
         
