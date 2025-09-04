@@ -73,14 +73,23 @@ public class Lista {
         if (cabeza == null) 
     } */
     
-    public void eliminarFinalElemento(){
+    public boolean  ValidateListVacia(){
         
         if (cabeza == null){
-            return;
+            System.out.println("La Lista esta vacia");     
         }
+        
+        return false;  
+        
         
         
         
     }
+    
+    
+    
+    
+    
+    
     
 }
