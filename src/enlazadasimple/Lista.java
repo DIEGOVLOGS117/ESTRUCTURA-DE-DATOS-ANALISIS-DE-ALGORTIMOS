@@ -1,99 +1,75 @@
 package enlazadasimple;
 
 public class Lista {
-    
+
     private Nodo cabeza;
-    public int tamaño;
     private Nodo cola;
-    
+    public int tamaño;
+
     public Lista() {
-        this.cabeza = null; // aqui la lista esta vacia / si se pierde cabeza se pierde todo 
-        this.tamaño = 0;
+        this.cabeza = null;
         this.cola = null;
-    }
-       
-    public void insertarNodoInicio(int dato){  // ingresamos el primer dato
-    Nodo nodoIni = new Nodo (dato);
-    nodoIni.siguiente = cabeza;
-    cabeza = nodoIni;
-    }     
-    
-    public void insertarNodoFinal(int dato) {
-    
-    Nodo nodoFin = new Nodo(dato);    
-    Nodo nodoRecorre = cabeza;
-    
-    while(nodoRecorre.siguiente != null){
-        nodoRecorre = nodoRecorre.siguiente;
-    }
-        nodoRecorre.siguiente = nodoFin;     
-    }   
-
-       /*
-/ nodo que este entre el inicio y final
-    
-    public void middle(int dato) {
-   */     
-       
-    public void imprimirLista(){
-        Nodo nodoRecorre = cabeza;
-    while (nodoRecorre != null){
-        System.out.println(nodoRecorre.dato + "->");
-        nodoRecorre = nodoRecorre.siguiente;
-    }
-        System.out.println("NULL");       
-        
+        this.tamaño = 0;
     }
 
-    public void inserIndice(int dato, int idx){
-        Nodo nodoIndice = new Nodo (dato);
-        Nodo nodoRecorre = cabeza;
-        
-        int cont = 0;        
-    }
-    
-    // primera opcion 
-    public void eliminarInicioElemento() {  // es para Ahorrar memoria borrando copias ya realizadas
-        Nodo inicio = cabeza;
-        cabeza = cabeza.siguiente;
-        inicio.siguiente = null; // rompe enlace
-        tamaño--;
-        
-    }
-    
-    /* este es el metodo 2 public void eliminarNodoInicio (){
-    cabeza = cabeza.siguiente;
-    tamaño --; */
-
-    public int getTamaño() {
-        return tamaño;
-    }
-
-    /* public boolean verificadorPromax(){
-        if (cabeza == null) 
-    } */
-    
-    public boolean  ValidateListVacia(){
-        
-        if (cabeza == null){
-            System.out.println("La Lista esta vacia");     
+    public void InsertarNodo(int dato) {
+        Nodo nodoIni = new Nodo(dato);
+        nodoIni.siguiente = cabeza;
+        cabeza = nodoIni;
+        if (cola == null) {
+            cola = nodoIni;
         }
-        
-        return false;  
-        
-        /* LISTAS ENLAZADAS SIMPLES CORREGIR Y ESTUDIAR PARA LUEGO EMPEZAR A LAS DOBLES 
-        https://youtu.be/f_JpVRrPUFo?si=XIofVaOqhuhxjmZW
-        */
-        
-        
+        tamaño++;
     }
-    
-    
-    
-    
-    
-    
-    
 
+    public void InsertarNodoFinal(int dato) {
+        Nodo nodoFin = new Nodo(dato);
+        if (cabeza == null) {
+            cabeza = nodoFin;
+            cola = nodoFin;
+        } else {
+            cola.siguiente = nodoFin;
+            cola = nodoFin;
+        }
+        tamaño++;
+    }
+
+    public void InsertarEnIndice(int dato, int idx) {
+        if (idx < 0 || idx > tamaño) {
+            System.out.println("Índice fuera de rango");
+            return;
+        }
+
+        if (idx == 0) {
+            InsertarNodo(dato);
+            return;
+        }
+
+        Nodo nodoIndice = new Nodo(dato);
+        Nodo nodoRecorre = cabeza;
+        int cont = 0;
+
+        while (cont < idx - 1) {
+            nodoRecorre = nodoRecorre.siguiente;
+            cont++;
+        }
+
+        nodoIndice.siguiente = nodoRecorre.siguiente;
+        nodoRecorre.siguiente = nodoIndice;
+
+        if (nodoIndice.siguiente == null) {
+            cola = nodoIndice;
+        }
+
+        tamaño++;
+    }
+
+    public void imprimirLista() {
+        Nodo nodoRecorre = cabeza;
+        while (nodoRecorre != null) {
+            System.out.print(nodoRecorre.dato + " -> ");
+            nodoRecorre = nodoRecorre.siguiente;
+        }
+        System.out.println("null");
+    }
 }
-
