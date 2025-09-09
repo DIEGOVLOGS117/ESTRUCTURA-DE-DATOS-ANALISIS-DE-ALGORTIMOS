@@ -23,6 +23,19 @@ public class Lista2 {
         else {
             return false;
         }
-    }   
+    }  
+    // agregar elementos al inicio y al final 
+    
+    public void imprimirListaIniAFin() {
+    Nodo2 nodoRecorre = cabeza;
+        System.out.println("Cabeza -> ");
+        while(nodoRecorre != null) {
+            System.out.println(nodoRecorre.dato + "->");
+        }
+        System.out.println("FINAL FINAL REAL MADRID GANA LA 16 CHAMPIONS");
+} 
+    public void imprimirListaFinAIni(){
+        
+    }
    
 }
