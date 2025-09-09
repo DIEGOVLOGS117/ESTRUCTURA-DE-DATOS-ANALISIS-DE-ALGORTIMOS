@@ -122,5 +122,37 @@ public class Lista {
             
          }
      }
+     
+     // buscar un valor especifico de mi lista sin posicion
+     
+     public void Valorcito(int dato){
+        Nodo nodoRecorre = cabeza;
+        boolean encontrarValor = false;
+        
+        while(nodoRecorre.siguiente != null){
+            if(nodoRecorre.dato == dato){
+        System.out.println("El Valor Especifico es: " + nodoRecorre.dato);
+        encontrarValor = true; 
+        break;
+            }   
+            else {
+                System.out.println("No Esta Ese Elemento Troste Pongase A Llorar" );
+                break;
+            }
+            
+            
+        }
+         
+ 
+         
+     }
+     
+     
          
 }
+
+
+
+
+/*  /* LISTAS ENLAZADAS SIMPLES CORREGIR Y ESTUDIAR PARA LUEGO EMPEZAR A LAS DOBLES .
+https://youtu.be/f_JpVRrPUFo?si=XIofVaOqhuhxjmZW */
