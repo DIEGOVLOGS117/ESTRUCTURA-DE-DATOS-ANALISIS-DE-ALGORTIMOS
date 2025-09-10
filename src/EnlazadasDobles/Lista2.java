@@ -11,7 +11,7 @@ public class Lista2 {
         this.tamanho = 0;
     }
 
-    public int getTamanho() {
+    public int getTamanho() { // aaa
         return tamanho;
     }
     
