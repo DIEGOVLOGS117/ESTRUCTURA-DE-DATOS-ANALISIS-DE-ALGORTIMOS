@@ -13,7 +13,7 @@ public class EnlazadaSimple {
         lista.insertarNodoInicio(8);
         lista.insertarNodoIndice(13, 3);
         //lista.imprimirLista();
-        //lista.eliminarNodoFinal(); 
+        //lista.eliminarNodoFinal()a; 
         //lista.eliminarIndice(1);
         lista.imprimirLista();
         lista.buscador(3);
