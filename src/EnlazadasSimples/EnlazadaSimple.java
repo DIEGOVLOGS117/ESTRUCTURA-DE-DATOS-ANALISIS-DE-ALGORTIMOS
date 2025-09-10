@@ -1,4 +1,4 @@
-package enlazadasimple;
+package EnlazadasSimples;
 
 public class EnlazadaSimple {
 
