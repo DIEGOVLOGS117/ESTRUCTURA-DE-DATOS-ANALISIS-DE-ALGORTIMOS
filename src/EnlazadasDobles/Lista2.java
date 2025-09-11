@@ -85,7 +85,7 @@ public class Lista2 {
 
     }
  
-    public void InsertNodoIndice(int dato){
+    public void InsertNodoIndice(int dato){ // qe pasa si tengo una lista de millones de elementos y quiero ingresar a lo ultimos dos elementos de dicha lista.
         
     }
    
