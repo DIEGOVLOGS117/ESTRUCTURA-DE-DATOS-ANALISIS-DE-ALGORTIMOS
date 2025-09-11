@@ -56,6 +56,11 @@ public class Lista2 {
         Nodo2 nodoIndice = new Nodo2(dato);
         Nodo2 nodoRecorre = cabeza;  
         
+        int cont = 0;
+        
+        
+        
+        
         
 
         
