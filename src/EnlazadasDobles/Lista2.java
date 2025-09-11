@@ -31,6 +31,7 @@ public class Lista2 {
         System.out.println(" Cabeza -> ");
         while(nodoRecorre != null) {
             System.out.println(nodoRecorre.dato + "->");
+            nodoRecorre = nodoRecorre.siguiente;
         }
         System.out.println(" FINAL FINAL REAL MADRID GANA LA 16 CHAMPIONS ");
 } 
@@ -45,10 +46,18 @@ public class Lista2 {
         System.out.println(" INICIO ");         
     }
     
-    public void InsertarNodito(int dato, int posicion){
+    public void InsertarNodito(int dato, int posicion){  // argumento de posicion pero que lo ingrese en una sola posicion
+        
+        if(posicion == 0 || posicion >= tamanho){
+        System.out.println("Eror al ingresar datos su posicion es invalida");
+        return;
+        }
+        
         Nodo2 nodoIndice = new Nodo2(dato);
+        Nodo2 nodoRecorre = cabeza;  
         
         
+
         
     }
    
