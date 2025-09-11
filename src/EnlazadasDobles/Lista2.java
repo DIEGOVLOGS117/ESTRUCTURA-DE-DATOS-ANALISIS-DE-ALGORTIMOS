@@ -17,7 +17,7 @@ public class Lista2 {
     
     public boolean estaVacia(){
         if(cabeza == null){
-            System.out.println("LE FALTA CABEZA");
+            System.out.println(" LE FALTA CABEZA ");
             return true;
         }
         else {
@@ -28,14 +28,23 @@ public class Lista2 {
     
     public void imprimirListaIniAFin() {
     Nodo2 nodoRecorre = cabeza;
-        System.out.println("Cabeza -> ");
+        System.out.println(" Cabeza -> ");
         while(nodoRecorre != null) {
             System.out.println(nodoRecorre.dato + "->");
         }
-        System.out.println("FINAL FINAL REAL MADRID GANA LA 16 CHAMPIONS");
+        System.out.println(" FINAL FINAL REAL MADRID GANA LA 16 CHAMPIONS ");
 } 
     public void imprimirListaFinAIni(){
+        Nodo2 nodoRecorre = cabeza;
         
+        System.out.println(" Final -> ");
+        while(nodoRecorre != null){
+            System.out.println(nodoRecorre.dato + " -> ");
+            nodoRecorre = nodoRecorre.anterior;
+        }
+        System.out.println(" INICIO ");         
     }
+    
+    
    
 }
