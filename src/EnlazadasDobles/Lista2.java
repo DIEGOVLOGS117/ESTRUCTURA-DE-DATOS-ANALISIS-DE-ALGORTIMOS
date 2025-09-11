@@ -45,6 +45,11 @@ public class Lista2 {
         System.out.println(" INICIO ");         
     }
     
-    
+    public void InsertarNodito(int dato, int posicion){
+        Nodo2 nodoIndice = new Nodo2(dato);
+        
+        
+        
+    }
    
 }
