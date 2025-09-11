@@ -59,7 +59,7 @@ public class Lista2 {
 //        int cont = 0;
            
     public void InsertarNodoInicio(int dato){   // metodo de la profe 
-    Nodo2 nuevo = new Nodo2 (dato);
+    Nodo2 nuevo = new Nodo2(dato);
     if(estaVacia()){
         cola = nuevo;
     } else{
@@ -70,8 +70,23 @@ public class Lista2 {
     cabeza = nuevo;
     tamanho++;  
     }
-        
+    
+    public void insetarNodoFin(int dato){
+     
+        Nodo2 nuevo = new Nodo2(dato);      
+        if(cola == null){
+            cabeza = nuevo;
+        }else{
+        cola.siguiente = nuevo;
+        nuevo.anterior = cola;
+      }
+      cola = nuevo;
+      tamanho++;
 
+    }
+ 
+    public void InsertNodoIndice(int dato){
         
-}
-  
+    }
+   
+} 
