@@ -46,24 +46,32 @@ public class Lista2 {
         System.out.println(" INICIO ");         
     }
     
-    public void InsertarNodito(int dato, int posicion){  // argumento de posicion pero que lo ingrese en una sola posicion
-        
-        if(posicion == 0 || posicion >= tamanho){
-        System.out.println("Eror al ingresar datos su posicion es invalida");
-        return;
-        }
-        
-        Nodo2 nodoIndice = new Nodo2(dato);
-        Nodo2 nodoRecorre = cabeza;  
-        
-        int cont = 0;
-        
-        
-        
-        
+//    public void InsertarNodito(int dato, int posicion){  // argumento de posicion pero que lo ingrese en una sola posicion
+//        
+//        if(posicion == 0 || posicion >= tamanho){
+//        System.out.println("Eror al ingresar datos su posicion es invalida");
+//        return;
+//        }
+//        
+//        Nodo2 nodoIndice = new Nodo2(dato);
+//        Nodo2 nodoRecorre = cabeza;  
+//        
+//        int cont = 0;
+           
+    public void InsertarNodoInicio(int dato){   // metodo de la profe 
+    Nodo2 nuevo = new Nodo2 (dato);
+    if(estaVacia()){
+        cola = nuevo;
+    } else{
+        cabeza.anterior = nuevo;
+    }    
+    nuevo.siguiente = cabeza;
+    nuevo.anterior = null;
+    cabeza = nuevo;
+    tamanho++;  
+    }
         
 
         
-    }
-   
 }
+  
