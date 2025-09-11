@@ -20,8 +20,7 @@ public class EnlazadaSimple {
         
         lista.Valorcito(1);  /// tarea para la casa hacer metodo para saber la posicion exacta
         
-        
-        
+     
     }  
     
 }
