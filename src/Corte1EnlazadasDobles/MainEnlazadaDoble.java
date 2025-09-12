@@ -1,4 +1,4 @@
-package EnlazadasDobles;
+package Corte1EnlazadasDobles;
 
 public class MainEnlazadaDoble {
     

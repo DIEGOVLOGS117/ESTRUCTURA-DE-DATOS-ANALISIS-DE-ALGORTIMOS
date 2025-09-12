@@ -1,4 +1,4 @@
-package EnlazadasSimples;
+package Corte1EnlazadasSimples;
 
 public class Nodo {
     
