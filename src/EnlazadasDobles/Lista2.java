@@ -26,8 +26,8 @@ public class Lista2 {
     }  
     // agregar elementos al inicio y al final 
     
-    public void imprimirListaIniAFin() {
-    Nodo2 nodoRecorre = cabeza;
+    public void imprimirListaIniAFin() { 
+    Nodo2 nodoRecorre = cabeza; // de inicio a fin iniciando desde la cabeza hasta la cola
         System.out.println(" Cabeza -> ");
         while(nodoRecorre != null) {
             System.out.println(nodoRecorre.dato + "->");
@@ -36,7 +36,7 @@ public class Lista2 {
         System.out.println(" FINAL FINAL REAL MADRID GANA LA 16 CHAMPIONS ");
 } 
     public void imprimirListaFinAIni(){
-        Nodo2 nodoRecorre = cabeza;
+        Nodo2 nodoRecorre = cola; // fin a inicio iniciando desde la cola hasta la cabeza
         
         System.out.println(" Final -> ");
         while(nodoRecorre != null){
