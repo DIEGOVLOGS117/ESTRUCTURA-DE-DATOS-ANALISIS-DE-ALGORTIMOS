@@ -19,8 +19,7 @@ public class EnlazadaSimple {
         lista.buscador(3);
         
         lista.Valorcito(1);  /// tarea para la casa hacer metodo para saber la posicion exacta
-        
-     
+       
     }  
     
 }

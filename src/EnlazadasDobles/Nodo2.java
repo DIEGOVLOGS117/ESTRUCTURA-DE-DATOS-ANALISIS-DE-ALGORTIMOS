@@ -10,5 +10,4 @@ public class Nodo2 {
         this.dato = dato;
     }
    
-   
 }

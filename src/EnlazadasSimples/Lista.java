@@ -20,7 +20,7 @@ public class Lista {
      
      public void insertarNodoFinal(int dato){
          Nodo nodoFin = new Nodo(dato);
-         Nodo nodoRecorre = cabeza; // hise una copia 
+         Nodo nodoRecorre = cabeza; // hice una copia 
          
          while (nodoRecorre.siguiente != null){
              nodoRecorre = nodoRecorre.siguiente;
@@ -139,20 +139,12 @@ public class Lista {
                 System.out.println("No Esta Ese Elemento Troste Pongase A Llorar" );
                 break;
             }
-            
-            
+
         }
-         
- 
-         
+
      }
      
-     
-         
 }
-
-
-
 
 /*  /* LISTAS ENLAZADAS SIMPLES CORREGIR Y ESTUDIAR PARA LUEGO EMPEZAR A LAS DOBLES .
 https://youtu.be/f_JpVRrPUFo?si=XIofVaOqhuhxjmZW */

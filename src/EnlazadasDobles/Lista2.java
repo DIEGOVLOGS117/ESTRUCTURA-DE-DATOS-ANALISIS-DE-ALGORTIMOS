@@ -71,7 +71,7 @@ public class Lista2 {
     tamanho++;  
     }
     
-    public void insetarNodoFin(int dato){
+    public void InsertarNodoFin(int dato){
      
         Nodo2 nuevo = new Nodo2(dato);      
         if(cola == null){
@@ -85,16 +85,38 @@ public class Lista2 {
 
     }
  
-    public void InsertNodoIndice(int dato){ // qe pasa si tengo una lista de millones de elementos y quiero ingresar a lo ultimos dos elementos de dicha lista.
+    public void InsertNodoIndice(int dato, int posicion){ // qe pasa si tengo una lista de millones de elementos y quiero ingresar a lo ultimos dos elementos de dicha lista.
+        if (posicion < 0 || posicion > tamanho) {
+            System.out.println("POSICION INCORRECTA VUELVA E INTENTE CON OTRA");
+            return;        
+        }
+        if (posicion == 0) {
+            InsertarNodoInicio(dato);
+            return;
+        }
+        if (posicion == tamanho) {
+            InsertarNodoFin(dato);
+            return;
+        } 
         Nodo2 nuevo = new Nodo2(dato);    
-        Nodo2 recorre;
+        Nodo2 actual = cabeza;
         
+        int contador = 0;
         
+        while (contador < posicion) {      
+         actual = actual.siguiente;
+         contador++;
+        }
         
+        /* actual es el nodo que estará en la posición "posicion" y El nuevo nodo irá antes de actual*/
         
+        Nodo2 anterior = actual.anterior;
         
+        anterior.siguiente = nuevo;
+        nuevo.anterior = anterior;
+        nuevo.siguiente = actual;
+        actual.anterior = nuevo;
         
-        
+        tamanho++;   
     }
-   
 } 
