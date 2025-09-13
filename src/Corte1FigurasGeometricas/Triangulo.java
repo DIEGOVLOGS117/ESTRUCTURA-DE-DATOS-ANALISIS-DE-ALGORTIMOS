@@ -54,5 +54,5 @@ public class Triangulo extends Figura {
     public double obtenerPerimetro(){
         return base+(altura + altura);
     }
-      /* FINAL*/
+
 }
