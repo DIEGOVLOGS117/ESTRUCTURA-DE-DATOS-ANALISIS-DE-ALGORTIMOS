@@ -11,6 +11,23 @@ public class MainFigurasGeometricas {
     
     public static void main(String[] args) {
         
+        Figura circulito = new Circulo(5.2, 0 ,0);
+        Figura rectangulito = new Rectangulo(2.5,4.5,0,0);
+        Figura triangulito = new Triangulo(2.5,3.5,0,0);
+        Figura cuadratito = new Cuadrado(4,0,0);
+        
+        imprimirFigura("Circulo", circulito);
+        imprimirFigura("Rectangulo", rectangulito);
+        imprimirFigura("Triangulo", triangulito);
+        imprimirFigura("Cuadrado", cuadratito); 
+    }
+    
+    public static void imprimirFigura(String nombre, Figura figura){
+        System.out.println(" === "+ nombre + " === ");
+        System.out.println(" Area: " + figura.obtenerArea());
+        System.out.println(" Perimetro: " + figura.obtenerPerimetro());
+        System.out.println(" === ===");
+        
     }
     
 }

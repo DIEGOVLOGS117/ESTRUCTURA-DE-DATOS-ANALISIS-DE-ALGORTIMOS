@@ -29,6 +29,6 @@ public abstract class Figura {
     }
     
     public abstract double obtenerArea();
-    public abstract double obtenerPerimetro(); // solo debe ir en ; el { es cuando implemento 
+    public abstract double obtenerPerimetro(); // solo debe ir en ; el { es cuando implemento, y asi
     
 }

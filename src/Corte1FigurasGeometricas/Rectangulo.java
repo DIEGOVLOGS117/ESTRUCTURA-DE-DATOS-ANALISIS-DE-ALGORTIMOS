@@ -45,7 +45,6 @@ public class Rectangulo extends Figura {
         this.Puntoy = Puntoy;
     }
     
-    
     @Override
     public double obtenerArea(){
         return base*altura;
