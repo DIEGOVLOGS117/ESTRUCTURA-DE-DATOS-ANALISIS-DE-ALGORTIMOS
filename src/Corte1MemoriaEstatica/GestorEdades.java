@@ -1,4 +1,4 @@
-package Corte1TiposDeMemoria;
+package Corte1MemoriaEstatica;
 
 import java.util.Arrays;
 import java.util.Scanner;
