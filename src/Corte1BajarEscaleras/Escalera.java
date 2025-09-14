@@ -12,4 +12,3 @@ public class Escalera {
         }      
     }
 }
-/* A YAAAAAAAAAAAA */
