@@ -156,16 +156,35 @@ public class Lista2 {
     }
             
     public void eliminarIndiceIndicado(int indice){
-        Nodo2 recorre; //
-        if(estaVacia()){
-            System.out.println("No puede Eliminar Nada");
-        }
-        
-        
-        
+    Nodo2 recorre; //
+    if(estaVacia()){
+        System.out.println("No puede Eliminar Nada");
+    } else if (cabeza == cola){
+        cola = null;
+        cabeza = null;            
+    } else {
+        recorre = cabeza;
+        int cont = 0;
+    }
 
-        } 
+    while (cont < pos && recorre.siguiente != null){
+        recorre = recorre.siguiente;
+        cont++;
+    }
+
+    if (cont == pos){
+        recorre.siguiente = recorre.siguiente.siguiente;
+        recorre.siguiente.anterior = recorre;
+        cont++;
+    } else {
+        System.out.println("Posicion No Existe");
+    }
+}
+    
+    public void buscarElementoPos(int dato){
         
         
+    }
         
+           
 }            
