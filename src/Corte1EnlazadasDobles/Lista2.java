@@ -1,5 +1,7 @@
 package Corte1EnlazadasDobles;
 
+import Corte1EnlazadasSimples.Nodo;
+
 public class Lista2 {
     
     private Nodo2 cabeza,cola;
@@ -24,6 +26,11 @@ public class Lista2 {
             return false;
         }
     }  
+    
+    /*     public boolean estaVacia(){
+        return tamanho == 0 || cabeza == null || cola == null;
+    }  */
+    
     // agregar elementos al inicio y al final 
     
     public void imprimirListaIniAFin() { 
@@ -120,14 +127,45 @@ public class Lista2 {
         tamanho++;   
     }
 
+    public void eliminarInicio(){ // elimina la posicion cero de la lista
+        if (estaVacia()) {
+            System.out.println(" No Tenemos Nada Por Eliminar");
+        } else if (cabeza == cola){
+            cola = null;
+            cabeza = null;
+            tamanho--;    
+        } else{
+            cabeza = cabeza.siguiente;
+            cabeza.anterior = null;
+            tamanho--;    
+        }  
+    }
     
-         
-    
-    
-    
-    
-    
-    
-    
-    
-} 
+    public void eliminarFInal(){ // elimina ls posicion ultima es decir la 0 iniciando desde la cola y  la posicion 5 iniciando desde la cabeza
+        if (estaVacia()) {
+            System.out.println(" No Tenemos Nada Por Eliminar");
+        } else if (cabeza == cola){
+            cola = null;
+            cabeza = null;
+            tamanho--;    
+        } else{
+            cola = cola.anterior;
+            cabeza.siguiente = null;
+            tamanho--;    
+        }  
+    }
+            
+    public void eliminarIndiceIndicado(int indice){
+        Nodo2 recorre; //
+        if(estaVacia()){
+            System.out.println("No puede Eliminar Nada");
+        }
+        
+        
+        
+
+        } 
+        
+        
+        
+}            

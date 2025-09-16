@@ -8,7 +8,7 @@ public class MainEnlazadaDoble {
     
     // nodo de inicio
     listica.InsertarNodoInicio(17);
-    listica.InsertarNodoInicio(7); 
+    listica.InsertarNodoInicio(7); // posicion cero recordar que todas las listas inician desde cero y antes de esta esta la cabeza ->
     
     // nodo  final
     listica.InsertarNodoFin(30);
@@ -30,5 +30,25 @@ public class MainEnlazadaDoble {
     
     // lista vacia
     listica.estaVacia();    
+    
+    // despues de yo borrar colocar un system oout que diga siuuu
+    
+    System.out.println("SIUUUUU");
+    
+    System.out.println("Eliminacion de inicio a fin");
+    listica.eliminarInicio();
+    listica.imprimirListaIniAFin();
+    
+    
+    System.out.println("Eliminacion de fin a inicio");
+    listica.eliminarFInal();
+    listica.imprimirListaFinAIni();
+
+    // eliminarIndiceIndicado
+    
+    listica.eliminarIndiceIndicado(5);
+    
+    
+    
     }
 }
