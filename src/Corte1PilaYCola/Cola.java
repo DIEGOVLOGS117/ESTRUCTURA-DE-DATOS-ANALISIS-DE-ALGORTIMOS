@@ -2,15 +2,16 @@ package Corte1PilaYCola;
 
 public class Cola {
     
-    private Nodo primerNodito;
+    private Nodo primerNodito; 
     private Nodo ultimoNodito;
+    private int tamanho;
 
     public Cola() {
         this.primerNodito = null; // inicializados en vacios los nodos del inicio y final
         this.ultimoNodito = null;
     }
 
-    public Cola(Nodo primerNodito, Nodo ultimoNodito) {
+    public Cola(Nodo primerNodito, Nodo ultimoNodito, int tamanho) {
         this.primerNodito = primerNodito;  
         this.ultimoNodito = ultimoNodito;
     }
