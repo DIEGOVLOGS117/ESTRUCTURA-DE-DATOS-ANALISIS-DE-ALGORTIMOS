@@ -1,15 +1,13 @@
-package Corte1PilaYCola;
+package Corte1Cola;
 
 public class Nodo {
     
-    public int dato;
-    public Nodo siguiente;
+    private  int dato;
+    private Nodo siguiente;
 
-    public Nodo() {}
-
-    public Nodo(int dato, Nodo siguiente) {
+    public Nodo(int dato) {
         this.dato = dato;
-        this.siguiente = siguiente;
+        this.siguiente = null;
     }
 
     public int getDato() {
