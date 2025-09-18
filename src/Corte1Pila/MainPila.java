@@ -9,7 +9,7 @@ public class MainPila {
         pilitagud.push(4);
         pilitagud.peek();
     
-        System.out.println("HOLAAAAAA");
+        System.out.println("HOLAAAAAA SOY INGE DE SISTEMAS");
     }
      
 }
