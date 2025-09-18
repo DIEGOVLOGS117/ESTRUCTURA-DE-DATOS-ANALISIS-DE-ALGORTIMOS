@@ -16,7 +16,13 @@ public class Pila {
     }
     
     public boolean validarPilaVacia(){
-        return tamanho == 0 || cima == null; // verificar 
+        if (tamanho == 0 || cima == null){
+            System.out.println(" La Pila Esta Vacia");
+            return true;
+        }else{
+            System.out.println("La Pila No Esta Vacia");
+            return false;
+        }
     }
     // PUSH ES PARA AGREGAR ELEMENTOS
    public void push(int dato){
@@ -41,6 +47,6 @@ public class Pila {
    
     // mostrar elemento  empty y el picky trae la cima sin eliminarla 
 
-    
+    /* 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 key de github */
     
 }
