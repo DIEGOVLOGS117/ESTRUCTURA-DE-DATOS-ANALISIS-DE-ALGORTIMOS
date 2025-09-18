@@ -47,8 +47,6 @@ public class Pila {
    
     // mostrar elemento  empty y el picky trae la cima sin eliminarla 
 
-    /* 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 key de github */
-   
     public void peek(){
     if (validarPilaVacia()) {
         System.out.println("No Hay Elementos En La Pila");
