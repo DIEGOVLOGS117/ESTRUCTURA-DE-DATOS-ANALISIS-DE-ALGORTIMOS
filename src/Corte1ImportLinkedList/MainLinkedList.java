@@ -1,4 +1,4 @@
-package LinkedList;
+package Corte1ImportLinkedList;
 
 import java.util.LinkedList;
 
