@@ -17,13 +17,7 @@ public class MainStack {
         System.out.println("La Cima De La Pila Es: " + pilagud.peek());
         System.out.println("Sacado Elemento De La Pila: " + pilagud.pop());
         System.out.println("El Tamanho De La Pila Es: " + pilagud.size());
-        
-        System.out.println("La Cima De La Pila Es: " + pilagud.peek());
-        
-        
-        
-        
-        
+        System.out.println("La Cima De La Pila Es: " + pilagud.peek());     
         
     }
 }
