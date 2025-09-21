@@ -10,7 +10,6 @@ public class Escalera {
             System.out.println("Bajando Escalon " + numeroEscalones + ". Ahora Quedan" + (numeroEscalones-1));
             bajarEscalera(numeroEscalones-1);
             
-            // OMG RECURSIVIDAD
         }      
     }
 }
