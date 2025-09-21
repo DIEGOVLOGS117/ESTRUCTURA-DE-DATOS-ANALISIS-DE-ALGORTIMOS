@@ -9,7 +9,7 @@ public class Escalera {
         }else{ // caso recursivo
             System.out.println("Bajando Escalon " + numeroEscalones + ". Ahora Quedan" + (numeroEscalones-1));
             bajarEscalera(numeroEscalones-1);
-            
+            //a
         }      
     }
 }
