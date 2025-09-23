@@ -43,8 +43,6 @@ public class Arbol {
     
 }
 
-
-
 /*   backup
 public void insertarTest(int dato){
         if(vacioArbolitogud()){
