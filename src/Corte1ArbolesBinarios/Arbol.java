@@ -23,10 +23,40 @@ public class Arbol {
             return false;
         }  
     }
-    
-    // mayor o i gual derecha y menor o igual izquierda
-    
-    
-    
+        
+    public void insertarRaiz(int dato)  {
+        
+    Nodo nuevo = new Nodo(dato);
+    nuevo.setSiguiente(raiz);
+   
+    if (vacioArbolitogud()){  
+        System.out.println(" No Puede Ingresar Paila Esta Vacio El ArbolGud");   
+    }else if(raiz.dato < nuevo.dato) {
+     raiz = nuevo.hijoIzq;   
+    }else{
+        raiz = nuevo.hijoDerech;
+    }
+        
+    // secuencial para prox clase
+                 
+    }
     
 }
+
+
+
+/*   backup
+public void insertarTest(int dato){
+        if(vacioArbolitogud()){
+        System.out.println(" No Puede Ingresar Paila Esta Vacio El ArbolGud"); 
+        }else{
+         Nodo nuevo = new Nodo (dato);
+        nuevo.setSiguiente(raiz);
+        raiz = nuevo;
+        tamanio++;
+        System.out.println("Ingreso " + dato + " Al Arbol");
+        }
+        
+       
+        
+    }*/

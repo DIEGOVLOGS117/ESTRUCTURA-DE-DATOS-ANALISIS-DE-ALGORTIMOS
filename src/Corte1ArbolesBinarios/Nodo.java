@@ -2,14 +2,14 @@ package Corte1ArbolesBinarios;
     
 public class Nodo {
     
-    private int dato;
-    private Nodo siguiente;
-    private Nodo hijoIzq;
-    private Nodo hijoDerech;
+    public int dato;
+    public Nodo siguiente;
+    public Nodo hijoIzq;
+    public Nodo hijoDerech;
     
     public Nodo() {
         this.siguiente = null;
-        this.hijoIzq = null;
+        this.hijoIzq = null; 
         this.hijoDerech = null;
     }
 
@@ -32,5 +32,7 @@ public class Nodo {
     public void setSiguiente(Nodo siguiente) {
         this.siguiente = siguiente;
     }
+    
+    
     
 }

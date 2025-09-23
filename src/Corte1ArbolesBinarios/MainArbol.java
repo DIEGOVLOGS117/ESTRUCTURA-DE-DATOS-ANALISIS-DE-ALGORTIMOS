@@ -7,7 +7,11 @@ public class MainArbol {
         Arbol arbolitogud = new Arbol();
         
         arbolitogud.vacioArbolitogud();
-        
+
+                
+                
+               
+               
     }
    
 }
