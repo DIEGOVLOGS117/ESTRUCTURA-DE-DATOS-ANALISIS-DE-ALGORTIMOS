@@ -21,11 +21,7 @@ public class Arbol {
         } else{
             System.out.println(" Su Arbol No Esta Vacio ");
             return false;
-        }
-        
-        
-        
-        
+        }  
     }
     
     
