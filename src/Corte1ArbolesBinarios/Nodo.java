@@ -1,20 +1,20 @@
 package Corte1ArbolesBinarios;
-    
+
 public class Nodo {
-    
-    public int dato;
-    public Nodo siguiente;
-    public Nodo hijoIzq;
-    public Nodo hijoDerech;
-    
+
+    private int dato;
+    private Nodo hijoIzq;
+    private Nodo hijoDerech;
+
     public Nodo() {
-        this.siguiente = null;
-        this.hijoIzq = null; 
+        this.hijoIzq = null;
         this.hijoDerech = null;
     }
 
     public Nodo(int dato) {
         this.dato = dato;
+        this.hijoIzq = null;
+        this.hijoDerech = null;
     }
 
     public int getDato() {
@@ -25,14 +25,19 @@ public class Nodo {
         this.dato = dato;
     }
 
-    public Nodo getSiguiente() {
-        return siguiente;
+    public Nodo getHijoIzq() {
+        return hijoIzq;
     }
 
-    public void setSiguiente(Nodo siguiente) {
-        this.siguiente = siguiente;
+    public void setHijoIzq(Nodo hijoIzq) {
+        this.hijoIzq = hijoIzq;
     }
-    
-    
-    
+
+    public Nodo getHijoDerech() {
+        return hijoDerech;
+    }
+
+    public void setHijoDerech(Nodo hijoDerech) {
+        this.hijoDerech = hijoDerech;
+    }
 }
