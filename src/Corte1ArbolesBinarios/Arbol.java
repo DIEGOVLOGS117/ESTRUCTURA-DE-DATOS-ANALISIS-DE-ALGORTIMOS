@@ -24,7 +24,7 @@ public class Arbol {
         }  
     }
     
-    
+    // mayor o i gual derecha y menor o igual izquierda
     
     
     
