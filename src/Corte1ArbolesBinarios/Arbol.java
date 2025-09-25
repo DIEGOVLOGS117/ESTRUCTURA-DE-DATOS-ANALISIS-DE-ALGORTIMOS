@@ -56,7 +56,7 @@ public class Arbol {
     if (raiz == null) {
         raiz = nuevo; // si la raiz es nula entonces le asignamos ese nodo creado
         tamanio++;
-        System.out.println("El Nodo de la Raiz Insertado: " + datoRecibido);
+        System.out.println("El Nodo De La Raiz Insertado: " + datoRecibido);
         return;
     }
     Nodo actual = raiz; // empezamos desde la raíz
@@ -66,7 +66,7 @@ public class Arbol {
             if (actual.getHijoIzq() == null) {
                 actual.setHijoIzq(nuevo);
                 tamanio++;
-                System.out.println("Se Insertó: " + datoRecibido + " a la izquierda de " + actual.getDato() + " porque es menor");
+                System.out.println("Se Insertó: " + datoRecibido + " A La Izquierda De " + actual.getDato() + " Porque Es Menor");
                 return;
             } else {
                 actual = actual.getHijoIzq();
@@ -76,7 +76,7 @@ public class Arbol {
             if (actual.getHijoDerech() == null) {
                 actual.setHijoDerech(nuevo);
                 tamanio++;
-                System.out.println("Se Inserto: " + datoRecibido + " A la derecha de " + actual.getDato() + " porque es mayor o igual");
+                System.out.println("Se Inserto: " + datoRecibido + " A la Derecha De " + actual.getDato() + " Porque Es Mayor O Igual");
                 return;
             } else {
                 actual = actual.getHijoDerech();
@@ -124,19 +124,19 @@ public class Arbol {
      return 1 + contarNodosGud(nodo.getHijoIzq()) + contarNodosGud(nodo.getHijoDerech());
 }
 
+    public void insertarArbolRecursive(int datoRecibido, Nodo raiz){
+    
+        
+        
+        
+        
+        
+        
+}
+ 
 
-
     
     
     
-    
-    
-    
-    
-    
-    
-
-    
-
     
 }
