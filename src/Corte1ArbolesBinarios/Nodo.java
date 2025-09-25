@@ -10,8 +10,8 @@ public class Nodo {
         this.hijoIzq = null;
         this.hijoDerech = null;
     }
-
-    public Nodo(int dato) {
+    
+    public Nodo(int dato) {  // recordarme inicializar en null en el vacio y el que tiene parametros.
         this.dato = dato;
         this.hijoIzq = null;
         this.hijoDerech = null;
