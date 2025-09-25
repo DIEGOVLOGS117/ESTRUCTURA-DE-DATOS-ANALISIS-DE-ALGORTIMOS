@@ -124,15 +124,13 @@ public class Arbol {
      return 1 + contarNodosGud(nodo.getHijoIzq()) + contarNodosGud(nodo.getHijoDerech());
 }
 
-    public void insertarArbolRecursive(int datoRecibido, Nodo raiz){
-    
-        
-        
-        
-        
-        
-        
+    public void insertarArbolRecursive(int datoRecibido){
+        raiz = insertarArbolRecursive(raiz, datoRecibido);     // no se que error
 }
+    
+    public void insertarRecusive(Nodo raiz){
+
+    }
  
 
     
