@@ -36,7 +36,7 @@ public class Arbol {
             System.out.println(" Su Arbol Esta Vacio ");      
             return true;
         } else{
-            System.out.println(" Su Arbol No Esta Vacio ");
+            System.out.println(" Hola Mundo ");
             return false;
         }  
     }
