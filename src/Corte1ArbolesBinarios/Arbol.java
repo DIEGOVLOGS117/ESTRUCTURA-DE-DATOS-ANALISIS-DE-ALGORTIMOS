@@ -123,15 +123,29 @@ public class Arbol {
         return 0;
      return 1 + contarNodosGud(nodo.getHijoIzq()) + contarNodosGud(nodo.getHijoDerech());
 }
-
+    // forma de insertar recursivamente
+    
     public void insertarArbolRecursive(int datoRecibido){
-        raiz = insertarArbolRecursive(raiz, datoRecibido);     // no se que error
+        raiz = insertarRecusive(raiz, datoRecibido);     /// la raiz sera igual al valor que ingrese en mi metodo
+        /// de tipo Nodo el metodo insertarRecusive
+        tamanio++;
 }
     
-    public void insertarRecusive(Nodo raiz){
-
+   private Nodo insertarRecusive(Nodo raiz, int dato){
+    if (raiz == null) {
+        return new Nodo(dato);  // Caso base: crea nuevo nodo
     }
- 
+
+    if (dato < raiz.getDato()) {
+        raiz.setHijoIzq(insertarRecusive(raiz.getHijoIzq(), dato));  // Inserta en la izquierda
+    } else {
+        raiz.setHijoDerech(insertarRecusive(raiz.getHijoDerech(), dato));  // Inserta en la derecha
+    }
+
+    return raiz;  // Retorna el nodo actualizado
+}
+
+   
 
     
     
