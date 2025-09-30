@@ -145,7 +145,6 @@ public class Arbol {
         }
     }
 }
-  
     // recorre el arbol en orden es decir (raiz- izquierda - derecha)
     public void preOrdenGud(Nodo nodo) {
     if (nodo != null) {
