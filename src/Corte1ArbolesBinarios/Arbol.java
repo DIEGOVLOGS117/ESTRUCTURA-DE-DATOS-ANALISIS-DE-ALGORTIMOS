@@ -1,5 +1,8 @@
 package Corte1ArbolesBinarios;
 
+import java.util.Queue;
+import java.util.LinkedList;
+
 public class Arbol {
     
     private Nodo raiz;
@@ -84,45 +87,6 @@ public class Arbol {
         }
     }
 }
-    
-    public boolean buscarNoditoGud(int dato) {
-    Nodo actual = raiz;
-    while (actual != null) {
-        if (dato == actual.getDato()) {
-            System.out.println("Dato Encontrado: " + dato);
-            return true;
-        } else if (dato < actual.getDato()) {
-            actual = actual.getHijoIzq();
-        } else {
-            actual = actual.getHijoDerech();
-        }
-    }
-    System.out.println("Dato No Encontrado: " + dato);
-    return false;
-}
-    // recorrer el arbol en desorden es decir  (izquierda - raiz - derecha)
-    public void inordenGud(Nodo nodo){
-        if(nodo != null){ // diferente de null el nodo
-            inordenGud(nodo.getHijoIzq());
-            System.out.println(nodo.getDato() + " ");
-            inordenGud(nodo.getHijoDerech());
-         }   
-    }
-    // recorre el arbol en orden es decir (raiz- izquierda - derecha)
-    public void preOrdenGud(Nodo nodo) {
-    if (nodo != null) {
-        System.out.println(nodo.getDato());
-        preOrdenGud(nodo.getHijoIzq());
-        preOrdenGud(nodo.getHijoDerech());
-    }
-}
-
-    
-    public int contarNodosGud(Nodo nodo) {
-        if (nodo == null) 
-        return 0;
-     return 1 + contarNodosGud(nodo.getHijoIzq()) + contarNodosGud(nodo.getHijoDerech());
-}
     // forma de insertar recursivamente
     
     public void insertarArbolRecursive(int datoRecibido){
@@ -142,6 +106,60 @@ public class Arbol {
     }
 
     return raiz;  // Retorna el nodo actualizado
+}
+    // buscar el nodo insertado
+    public boolean buscarNoditoGud(int dato) {
+    Nodo actual = raiz;
+    while (actual != null) {
+        if (dato == actual.getDato()) {
+            System.out.println("Dato Encontrado: " + dato);
+            return true;
+        } else if (dato < actual.getDato()) {
+            actual = actual.getHijoIzq();
+        } else {
+            actual = actual.getHijoDerech();
+        }
+    }
+    System.out.println("Dato No Encontrado: " + dato);
+    return false;
+}
+    
+    public void enAnchuraGud(Nodo nodo){ // usar linkedlist y Queue
+        if(nodo !=null){
+            System.out.println("Nivel 0: " + nodo.getDato());
+        
+    }
+        
+    }
+    
+    // recorre el arbol en orden es decir (raiz- izquierda - derecha)
+    public void preOrdenGud(Nodo nodo) {
+    if (nodo != null) {
+        System.out.println(nodo.getDato());
+        preOrdenGud(nodo.getHijoIzq());
+        preOrdenGud(nodo.getHijoDerech());
+    }
+}  
+    // recorrer el arbol en desorden es decir  (izquierda - raiz - derecha)
+    public void inordenGud(Nodo nodo){
+        if(nodo != null){ // diferente de null el nodo
+            inordenGud(nodo.getHijoIzq());
+            System.out.println(nodo.getDato() + " ");
+            inordenGud(nodo.getHijoDerech());
+         }   
+    }
+    
+    public void postOrdenGud(Nodo nodo){
+        if(nodo != null){
+            System.out.println(nodo.getDato());
+        } 
+        
+    }
+    
+    public int contarNodosGud(Nodo nodo) {
+        if (nodo == null) 
+        return 0;
+     return 1 + contarNodosGud(nodo.getHijoIzq()) + contarNodosGud(nodo.getHijoDerech());
 }
 
    public void impresionArbolGud(){
