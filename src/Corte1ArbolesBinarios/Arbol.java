@@ -39,7 +39,6 @@ public class Arbol {
             System.out.println(" Su Arbol Esta Vacio ");      
             return true;
         } else{
-            System.out.println(" Hola Mundo ");
             return false;
         }  
     }
@@ -69,7 +68,7 @@ public class Arbol {
             if (actual.getHijoIzq() == null) {
                 actual.setHijoIzq(nuevo);
                 tamanio++;
-                System.out.println("Se Insertó: " + datoRecibido + " A La Izquierda De " + actual.getDato() + " Porque Es Menor");
+                System.out.println("Se Inserto: " + datoRecibido + " A La Izquierda De " + actual.getDato() + " Porque Es Menor");
                 return;
             } else {
                 actual = actual.getHijoIzq();
@@ -124,18 +123,33 @@ public class Arbol {
     return false;
 }
     
-    public void enAnchuraGud(Nodo nodo){ // usar linkedlist y Queue
-        if(nodo !=null){
-            System.out.println("Nivel 0: " + nodo.getDato());
-        
+    public void enAnchuraGud(Nodo nodo) {
+    if (vacioArbolitogud()) {
+        System.out.println("El árbol está vacío.");
+        return;
     }
-        
+
+    Queue<Nodo> gudColaArbol = new LinkedList<>();
+    gudColaArbol.add(nodo); // o también puedes usar this.raiz
+
+    while (!gudColaArbol.isEmpty()) {
+        Nodo nodito = gudColaArbol.poll();
+        System.out.println(nodito.getDato());
+
+        if (nodito.getHijoIzq() != null) {
+            gudColaArbol.add(nodito.getHijoIzq());
+        }
+
+        if (nodito.getHijoDerech() != null) {
+            gudColaArbol.add(nodito.getHijoDerech());
+        }
     }
-    
+}
+  
     // recorre el arbol en orden es decir (raiz- izquierda - derecha)
     public void preOrdenGud(Nodo nodo) {
     if (nodo != null) {
-        System.out.println(nodo.getDato());
+        System.out.println(nodo.getDato()); // impresion de la raiz
         preOrdenGud(nodo.getHijoIzq());
         preOrdenGud(nodo.getHijoDerech());
     }

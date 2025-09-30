@@ -28,6 +28,7 @@ public class MainArbol {
         // arbolitogud.insertarArbolRecursive(53);
 
         System.out.println();
+        System.out.println("================================================");
 
         // Buscar un nodo existente y uno inexistente
         arbolitogud.buscarNoditoGud(15);
@@ -35,26 +36,36 @@ public class MainArbol {
 
         System.out.println();
 
+        System.out.println("================================================");
+        
         // Recorrido Inorden
-        System.out.println("Recorrido Inorden (izquierda - raíz - derecha):");
+        System.out.println("Recorrido Inorden (Izquierda - Raiz - Derecha):");
         arbolitogud.inordenGud(arbolitogud.getRaiz());
 
         System.out.println();
 
+        System.out.println("================================================");
+        
         // Recorrido Preorden
-        System.out.println("Recorrido Preorden (raíz - izquierda - derecha):");
+        System.out.println("Recorrido Preorden (Raiz - Izquierda - Derecha):");
         arbolitogud.preOrdenGud(arbolitogud.getRaiz());
+
+        System.out.println("================================================");
 
         System.out.println();
 
+        System.out.println("================================================");
+
         // Recorrido Postorden
-        System.out.println("Recorrido Postorden (izquierda - derecha - raíz):");
+        System.out.println("Recorrido Postorden (Izquierda - Derecha - Raiz):");
         arbolitogud.postOrdenGud(arbolitogud.getRaiz());
 
         System.out.println();
+        
+        System.out.println("================================================");
 
         // Contar total de nodos
         int totalNodos = arbolitogud.contarNodosGud(arbolitogud.getRaiz());
-        System.out.println("Total de nodos en el árbol: " + totalNodos);
+        System.out.println("Total De Nodos En El Arbol: " + totalNodos);
     }
 }
