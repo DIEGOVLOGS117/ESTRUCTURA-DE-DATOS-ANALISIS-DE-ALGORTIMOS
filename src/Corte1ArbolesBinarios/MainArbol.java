@@ -54,8 +54,6 @@ public class MainArbol {
 
         System.out.println();
 
-        System.out.println("================================================");
-
         // Recorrido Postorden
         System.out.println("Recorrido Postorden (Izquierda - Derecha - Raiz):");
         arbolitogud.postOrdenGud(arbolitogud.getRaiz());

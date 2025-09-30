@@ -180,6 +180,12 @@ public class Arbol {
     System.out.println("Recorrido inorden:");
     inordenGud(raiz);
    }
+   
+   public void impresionArbolPreOrden(){ // recordatorio va desde raiz - izquierda - derecha
+       System.out.println(" Recorrido PreOrden "); 
+       
+   }
+   
     
     
     
