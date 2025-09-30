@@ -109,14 +109,14 @@ public class Arbol {
          }   
     }
     // recorre el arbol en orden es decir (raiz- izquierda - derecha)
-    public void preOrdenGud(Nodo nodo){
-        if(nodo != null){
-            System.out.println( nodo.getHijoIzq()+ " ");
-            preOrdenGud(nodo.getHijoIzq());
-            preOrdenGud(nodo.getHijoDerech());
-        }
- 
+    public void preOrdenGud(Nodo nodo) {
+    if (nodo != null) {
+        System.out.println(nodo.getDato());
+        preOrdenGud(nodo.getHijoIzq());
+        preOrdenGud(nodo.getHijoDerech());
     }
+}
+
     
     public int contarNodosGud(Nodo nodo) {
         if (nodo == null) 
@@ -144,9 +144,9 @@ public class Arbol {
     return raiz;  // Retorna el nodo actualizado
 }
 
-   
    public void impresionArbolGud(){
-       
+    System.out.println("Recorrido inorden:");
+    inordenGud(raiz);
    }
     
     
