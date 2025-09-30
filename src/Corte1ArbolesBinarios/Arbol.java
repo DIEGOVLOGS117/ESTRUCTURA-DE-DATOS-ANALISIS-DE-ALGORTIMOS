@@ -145,7 +145,9 @@ public class Arbol {
 }
 
    
-
+   public void impresionArbolGud(){
+       
+   }
     
     
     

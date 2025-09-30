@@ -21,6 +21,7 @@ public class MainArbol {
     arbolitogud.insertarNodo(5);
     arbolitogud.insertarNodo(15);
 
+        System.out.println("HOLA MUNDO");
 
 
 
