@@ -129,8 +129,7 @@ public class Arbol {
         raiz = insertarRecusive(raiz, datoRecibido);     /// la raiz sera igual al valor que ingrese en mi metodo
         /// de tipo Nodo el metodo insertarRecusive
         tamanio++;
-}
-    
+} 
    private Nodo insertarRecusive(Nodo raiz, int dato){
     if (raiz == null) {
         return new Nodo(dato);  // Caso base: crea nuevo nodo
