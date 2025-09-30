@@ -37,7 +37,7 @@ public class MainArbol {
         System.out.println();
 
         System.out.println("================================================");
-        
+
         // Recorrido Inorden
         System.out.println("Recorrido Inorden (Izquierda - Raiz - Derecha):");
         arbolitogud.inordenGud(arbolitogud.getRaiz());
