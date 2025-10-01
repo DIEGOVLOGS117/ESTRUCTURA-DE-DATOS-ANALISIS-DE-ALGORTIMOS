@@ -5,8 +5,8 @@ import java.util.LinkedList;
 
 public class Arbol {
     
-    private Nodo raiz;
-    private int tamanio;
+    protected Nodo raiz;
+    protected int tamanio;
 
     public Arbol() {
         this.raiz = null; // a pesar que ya lo haga java para acordarme.

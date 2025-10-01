@@ -2,9 +2,9 @@ package Corte1ArbolesBinarios;
 
 public class Nodo {
 
-    private int dato;
-    private Nodo hijoIzq;
-    private Nodo hijoDerech;
+    protected int dato;
+    protected Nodo hijoIzq;
+    protected Nodo hijoDerech;
 
     public Nodo() {
         this.hijoIzq = null;
