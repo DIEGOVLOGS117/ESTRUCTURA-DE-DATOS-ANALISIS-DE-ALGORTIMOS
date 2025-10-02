@@ -164,7 +164,7 @@ public class Arbol {
     Nodo nodoActual = raiz; // Empezamos desde la raíz
     
     if (vacioArbolitogud()) {
-        System.out.println("Su Arbol Esta Vacio, No Contiene Datos.");
+        System.out.println("Su Arbol Esta Vacio No Contiene Datos");
         return false;
     }
     // Recorremos el árbol mientras el nodo actual no sea nulo
@@ -182,14 +182,63 @@ public class Arbol {
     return false;
 }
     
+    public void eliminarNodoGud(int dato){
+        
+        if(vacioArbolitogud()){
+            System.out.println("Su Arbol Esta Vacio No Podemos Eliminar Nodos");
+            
+        } else if (!buscarNoditoGud(dato)){
+            System.out.println("El Nodo Ingresado " + dato + "No Existe En El Arbol");
+            
+        } else{
+            System.out.println("Dato Encontrado " + dato + "Existe En El Arbol");
+        }
+
+            
+        }
+        
+        
+        
+        
+        
+    }
     
     
     
-    
-    
-    
-    
-    
-    
-  
+
+
+
+/* public Nodo eliminarNodoGud(int dato, Nodo nodo) {
+    if (nodo == null) return null;
+
+    if (dato < nodo.dato) {
+        nodo.izquierdo = eliminarNodoGud(dato, nodo.izquierdo);
+    } else if (dato > nodo.dato) {
+        nodo.derecho = eliminarNodoGud(dato, nodo.derecho);
+    } else {
+        // Caso 1: sin hijos
+        if (nodo.izquierdo == null && nodo.derecho == null) {
+            return null;
+        }
+        // Caso 2: un hijo
+        else if (nodo.izquierdo == null) {
+            return nodo.derecho;
+        } else if (nodo.derecho == null) {
+            return nodo.izquierdo;
+        }
+        // Caso 3: dos hijos
+        Nodo sucesor = encontrarMinimo(nodo.derecho);
+        nodo.dato = sucesor.dato;
+        nodo.derecho = eliminarNodoGud(sucesor.dato, nodo.derecho);
+    }
+
+    return nodo;
 }
+
+private Nodo encontrarMinimo(Nodo nodo) {
+    while (nodo.izquierdo != null) {
+        nodo = nodo.izquierdo;
+    }
+    return nodo;
+}
+*/
