@@ -31,6 +31,7 @@ public class MainArbol {
         System.out.println("================================================");
 
         // Buscar un nodo existente y uno inexistente
+        System.out.println("Comprobacion De Existencia De Nodos");
         arbolitogud.buscarNoditoGud(15);
         arbolitogud.buscarNoditoGud(100);
 
@@ -62,8 +63,14 @@ public class MainArbol {
         
         System.out.println("================================================");
 
-        // Contar total de nodos
-        int totalNodos = arbolitogud.contarNodosGud(arbolitogud.getRaiz());
-        System.out.println("Total De Nodos En El Arbol: " + totalNodos);
+        
+        
+        
+        
+        
+        
+//        // Contar total de nodos
+//        int totalNodos = arbolitogud.contarNodosGud(arbolitogud.getRaiz());
+//        System.out.println("Total De Nodos En El Arbol: " + totalNodos);
     }
 }

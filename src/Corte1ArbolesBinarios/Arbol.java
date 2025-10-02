@@ -106,23 +106,7 @@ public class Arbol {
 
     return raiz;  // Retorna el nodo actualizado
 }
-    // buscar el nodo insertado
-    public boolean buscarNoditoGud(int dato) {
-    Nodo actual = raiz;
-    while (actual != null) {
-        if (dato == actual.getDato()) {
-            System.out.println("Dato Encontrado: " + dato);
-            return true;
-        } else if (dato < actual.getDato()) {
-            actual = actual.getHijoIzq();
-        } else {
-            actual = actual.getHijoDerech();
-        }
-    }
-    System.out.println("Dato No Encontrado: " + dato);
-    return false;
-}
-    
+    // buscar el nodo insertado   
     public void enAnchuraGud(Nodo nodo) {
     if (vacioArbolitogud()) {
         System.out.println("El árbol está vacío.");
@@ -169,21 +153,43 @@ public class Arbol {
         
     }
     
-    public int contarNodosGud(Nodo nodo) {
-        if (nodo == null) 
-        return 0;
-     return 1 + contarNodosGud(nodo.getHijoIzq()) + contarNodosGud(nodo.getHijoDerech());
-}
+//    public int contarNodosGud(Nodo nodo) {
+//        if (nodo == null) 
+//        return 0;
+//     return 1 + contarNodosGud(nodo.getHijoIzq()) + contarNodosGud(nodo.getHijoDerech());
+//}
 
-   public void impresionArbolGud(){
-    System.out.println("Recorrido inorden:");
-    inordenGud(raiz);
-   }
-   
-   public void impresionArbolPreOrden(){ // recordatorio va desde raiz - izquierda - derecha
-       System.out.println(" Recorrido PreOrden "); 
-       
-   }
-   
- 
+    public boolean buscarNoditoGud(int dato) {
+        
+    Nodo nodoActual = raiz; // Empezamos desde la raíz
+    
+    if (vacioArbolitogud()) {
+        System.out.println("Su Arbol Esta Vacio, No Contiene Datos.");
+        return false;
+    }
+    // Recorremos el árbol mientras el nodo actual no sea nulo
+    while (nodoActual != null) { // el while para recorrer todo el arbol
+        if (dato == nodoActual.getDato()) {
+            System.out.println("El Dato Encontrado Es: " + dato);
+            return true;
+        } else if (dato < nodoActual.getDato()) {
+            nodoActual = nodoActual.hijoIzq;
+        } else {
+            nodoActual = nodoActual.hijoDerech;
+        }
+    }
+    System.out.println("Su Dato Ingresado: " + dato + " No Existe En El Arbol.");
+    return false;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
 }
