@@ -183,18 +183,14 @@ public class Arbol {
 }
     
     public void eliminarNodoGud(int dato){
-        
         if(vacioArbolitogud()){
             System.out.println("Su Arbol Esta Vacio No Podemos Eliminar Nodos");
-            
         } else if (!buscarNoditoGud(dato)){
-            System.out.println("El Nodo Ingresado " + dato + "No Existe En El Arbol");
-            
+            System.out.println("El Nodo Ingresado " + dato + "No Existe En El Arbol");    
         } else{
             System.out.println("Dato Encontrado " + dato + "Existe En El Arbol");
         }
-//aa
-            
+     
         }
         
         
