@@ -199,10 +199,6 @@ public class Arbol {
         
     }
     
-    
-    
-
-
 
 /* public Nodo eliminarNodoGud(int dato, Nodo nodo) {
     if (nodo == null) return null;
