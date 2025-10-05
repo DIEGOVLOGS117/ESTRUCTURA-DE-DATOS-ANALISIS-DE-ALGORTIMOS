@@ -1,0 +1,26 @@
+¿Qué hace el siguiente método recursivo?. ¿En sus palabras, cuál es la recursión que
+resuelve? Explique.
+a. a + (b - 1)
+b. a * b
+c. a + a * b
+d. a^b
+
+static int hacer(int a, int b){
+ if (b == 0){
+ return 0;
+ }
+ else{
+ return (a + hacer(a,b-1));
+ }
+}
+
+explicacion
+
+El metodo recursivo hacer(int a, int b) calcula la multiplicacion de a por b 
+(es decir, a * b) mediante sumas repetidas de a, b veces.
+Caso base: Cuando b == 0, retorna 0 (ya que todo n´umero multiplicado por cero es
+cero).
+Caso recursivo: Retorna a + hacer(a, b-1), lo que suma a al resultado de la llamada
+recursiva con b-1.
+Esto equivale a sumar a consigo mismo b veces, resolviendo as´ı la operaci´on a * b de
+forma recursiva.

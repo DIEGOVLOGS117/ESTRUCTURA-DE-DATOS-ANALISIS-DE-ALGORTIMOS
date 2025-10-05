@@ -1,0 +1,25 @@
+¿Cuáles de las siguientes declaraciones son verdaderas sobre la herencia en Java?
+
+1. Los métodos protected son final
+2. Los métodos private son final
+3. No es posible @Override métodos private
+
+4. Un miembro protected es accesible dentro del package donde se define y por las
+clases heredadas fuera del package
+
+a. Solo 2 y 4
+b. 1, 2 y 4
+c. 1, 3 y 4
+d. 2, 3 y 4
+
+La respuesta correcta es la d (2, 3 y 4) porque, primeramente, metodos private no se
+pueden sobreescribir en las subclases, ya que no son visibles afuera de su clase. 
+Esto quiere decir que no se puede poner la anotaci´on @Override, adem´as su comportamiento se asemeja al de los m´etodos final, porque tampoco pueden ser cambiados en las
+clases hijas. Sin dudar, las afirmaciones 2 y 3 son verdaderas.
+Segundamente, el modificador protected da acceso a los miembros dentro del mismo
+paquete y tambi´en a las subclases, a´un si est´an en paquetes diferentes. Eso sugiere que los
+m´etodos o atributos protected si se puede acceder en esas subclases, lo cual confirma la
+verdad de la afirmaci´on 4.
+Finalmente, aunque los m´etodos protected tiene un nivel de acceso especial, no son final
+por defecto, eso significa que si, que pueden ser sobreescritos en las subclases, por tanto la
+afirmacion 1 es falsa
