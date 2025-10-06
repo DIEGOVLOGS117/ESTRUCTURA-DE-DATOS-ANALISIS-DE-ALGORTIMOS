@@ -154,10 +154,6 @@ public class ListaPunto1Ejem1 {
         System.out.println("Se Eliminaron " + eliminados + " Nodos Duplicados De La Lista.");
     }
 }
-
-  
-    
-    
-    
+   
     
 }
