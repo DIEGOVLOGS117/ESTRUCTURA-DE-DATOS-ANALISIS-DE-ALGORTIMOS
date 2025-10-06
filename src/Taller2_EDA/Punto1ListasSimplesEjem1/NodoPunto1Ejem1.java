@@ -12,7 +12,5 @@ public class NodoPunto1Ejem1 {
     public NodoPunto1Ejem1(int dato) {
         this.dato = dato;
     }
-
-    
-    
+  
 }

@@ -31,10 +31,8 @@ public class Lista {
      }
      
      public void insertarNodoIndice(int dato,int posicion ){ // insear nodo en un indice 
-        
          Nodo nodoIndice = new Nodo(dato);
-         Nodo nodoRecorre = cabeza;
-         
+         Nodo nodoRecorre = cabeza; 
          int cont = 0;
          while (cont <(posicion-1) && nodoRecorre.siguiente != null){
              nodoRecorre = nodoRecorre.siguiente; 
@@ -73,8 +71,7 @@ public class Lista {
          if (cabeza.siguiente == null){
          cabeza=null;
      }else{
-             Nodo nodoRecorre = cabeza;
-             
+             Nodo nodoRecorre = cabeza;             
              while(nodoRecorre.siguiente.siguiente != null){
                  nodoRecorre = nodoRecorre.siguiente;
              }
@@ -84,31 +81,24 @@ public class Lista {
      }
      
      public void eliminarIndice(int posicion){
-         
-         
-         Nodo nodoRecorre = cabeza;
-         
+         Nodo nodoRecorre = cabeza; 
          int cont = 0;
          while (cont <(posicion-1) && nodoRecorre.siguiente != null){
              nodoRecorre = nodoRecorre.siguiente; 
-             cont ++;
-             
+             cont ++;     
          }
-         
+
          Nodo aux = nodoRecorre.siguiente; // nodo a eliminar, creamos una copia del nodo 
          nodoRecorre.siguiente = aux.siguiente;// saltamos al otro nodo que queremos que se balla 
-         aux.siguiente = null; //romper el enlace , eliminamos el nodo
-         
+         aux.siguiente = null; //romper el enlace , eliminamos el nodo 
          tamano--;
      }
 
      public void buscador(int indice){
-        
          if(indice == 0 || indice >= tamano){
              System.out.println("Eror al ingresar datos");
              return;
-         }
-         
+         } 
          if(indice == 0){
              System.out.println("En el inidce 0 o el primer nodo se encuentra el dato" + cabeza.dato);
              }else{
