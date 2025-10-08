@@ -30,5 +30,6 @@ public class NodoSecuenciaPalabras {
     public void setSiguiente(NodoSecuenciaPalabras siguiente) {
         this.siguiente = siguiente;
     }
-       
+      
+    
 }

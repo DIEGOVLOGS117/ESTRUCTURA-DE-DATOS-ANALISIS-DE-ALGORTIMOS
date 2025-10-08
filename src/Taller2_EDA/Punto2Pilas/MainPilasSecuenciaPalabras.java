@@ -8,8 +8,13 @@ public class MainPilasSecuenciaPalabras {
         
         PilasSecuenciaPalabras rcraft = new PilasSecuenciaPalabras();
         
-        rcraft.validarPilaVaciaSecuenciaPalabras();
-        rcraft.pushSecuenciaPalabras("HOLA");
+//        rcraft.validarPilaVaciaSecuenciaPalabras();
+//        rcraft.pushSecuenciaPalabras("HOLA");
+
+    rcraft.revertirOrdenPalabras("Estructura De Datos");
+
+
+
         
     }
     
