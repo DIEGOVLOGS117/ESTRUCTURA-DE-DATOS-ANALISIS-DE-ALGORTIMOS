@@ -1,16 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Taller2_EDA.Punto2Pilas;
 
-/**
- *
- * @author DIEGOVLOGS117
- */
+import java.util.Stack;
+
 public class MainPilasSecuenciaPalabras {
     
     public static void main(String[] args) {
+        
+        PilasSecuenciaPalabras rcraft = new PilasSecuenciaPalabras();
+        
+        rcraft.validarPilaVaciaSecuenciaPalabras();
+        rcraft.pushSecuenciaPalabras("HOLA");
         
     }
     
