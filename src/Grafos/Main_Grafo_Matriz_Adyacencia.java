@@ -12,6 +12,8 @@ public class Main_Grafo_Matriz_Adyacencia {
         rcraft.agregarArista(3, 0);
         rcraft.imprimirGrafo();
         
+        
+        
     }
     
     
