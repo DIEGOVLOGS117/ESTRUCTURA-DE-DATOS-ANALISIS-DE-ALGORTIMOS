@@ -55,6 +55,7 @@ public class PilasSecuenciaPalabras {
         }
     }
     
+    // metodo punto 1.2
     public static String invertirPalabra(String palabra) {
     return new StringBuilder(palabra).reverse().toString();
 }
