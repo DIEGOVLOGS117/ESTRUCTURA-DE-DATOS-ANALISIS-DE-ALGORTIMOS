@@ -134,6 +134,44 @@ public class Lista {
 
      }
      
+     public void eliminarNodosDuplicados(){
+         Nodo recorrerLista = cabeza;
+               while(recorrerLista != null && recorrerLista.siguiente != null){
+             if(recorrerLista.dato == recorrerLista.siguiente.dato){
+                 System.out.println("Se Encontro Dato Repetido " + recorrerLista.dato);
+                 recorrerLista.siguiente = recorrerLista.siguiente.siguiente;
+             }else{
+                 recorrerLista = recorrerLista.siguiente;
+             }
+             
+             
+             
+         }
+         
+         
+     }  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
 }
 
 /* LISTAS ENLAZADAS SIMPLES CORREGIR Y ESTUDIAR PARA LUEGO EMPEZAR A LAS DOBLES .
