@@ -23,19 +23,31 @@ public class EnlazadaSimple {
 //        ///
 //       
 
+//    lista.insertarNodoInicio(1);
+//    lista.insertarNodoFinal(4);
+//    lista.insertarNodoFinal(4);
+//    lista.insertarNodoFinal(7);
+//    lista.insertarNodoFinal(7);
+    
     lista.insertarNodoInicio(1);
     lista.insertarNodoFinal(4);
-    lista.insertarNodoFinal(4);
-    lista.insertarNodoFinal(7);
-    lista.insertarNodoFinal(7);
+    lista.insertarNodoFinal(5);
     
+
+
     lista.imprimirLista();
     
-    lista.eliminarNodosDuplicados();
-    System.out.println("DESPUES DE ELIMINAR");
-    lista.imprimirLista();
+//    lista.eliminarNodosDuplicados();
+//    System.out.println("DESPUES DE ELIMINAR");
+//    lista.imprimirLista();
     
-    
+        System.out.println("LUEGO DE QUITAR LA COLA Y SER LA CABEZA");
+        lista.ultimatonToInicio();
+        
+        lista.imprimirLista();
+
+
+
     
        
     }  

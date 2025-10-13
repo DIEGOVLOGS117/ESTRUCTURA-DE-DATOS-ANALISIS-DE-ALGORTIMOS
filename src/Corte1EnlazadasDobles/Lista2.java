@@ -4,7 +4,8 @@ package Corte1EnlazadasDobles;
 
 public class Lista2 {
     
-    private Nodo2 cabeza, cola;
+    private Nodo2 cabeza;
+    private Nodo2 cola;
     private int tamanho = 0;
 
     public Lista2() {
@@ -215,4 +216,39 @@ public class Lista2 {
         System.out.println("El elemento en la posición " + indice + " es: " + actual.dato);
     }
                 
+    public void buscarElemencabeoCola(int valor){
+        if(estaVacia()){
+            System.out.println("Su Lista Esta Vacia");
+            return;  
+        }
+        else{
+            
+            Nodo2 actualCabeza = cabeza; // recorridos para la cola
+            Nodo2 actualCola = cola; // recorridos para la cola
+            
+            while(actualCabeza != null && actualCola != null){ // validar
+                
+            if(actualCabeza.dato == valor){
+                System.out.println("Encontrado Desde Cabeza: " + valor);
+                return;  
+            }
+            
+            if(actualCola.dato == valor){
+                 System.out.println("Encontrado Desde Cola: " + valor);
+                 return;
+            }
+            if (actualCabeza == actualCola || actualCabeza.siguiente == actualCola) {
+            break;
+        }
+        actualCabeza = actualCabeza.siguiente;
+        actualCola = actualCola.anterior;  
+        }         
+        System.out.println("Elemento No Encontrado");       
+        }   
+    }
+    
+    
+    
+    
+    
 }    

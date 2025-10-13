@@ -46,7 +46,11 @@ public class MainEnlazadaDoble {
 
     // eliminarIndiceIndicado
     
-    listica.eliminarIndiceIndicado(5);
+//    listica.eliminarIndiceIndicado(5);
+    
+    listica.buscarElemencabeoCola(5);
+    
+    
     
     
     

@@ -143,21 +143,29 @@ public class Lista {
              }else{
                  recorrerLista = recorrerLista.siguiente;
              }
-             
-             
-             
-         }
-         
-         
+ 
+         }  
      }  
      
+     public void ultimatonToInicio(){
+         if(cabeza == null || cabeza.siguiente == null){
+             System.out.println("Su Lista Esta Vacia");
+             return;
+         }
+         Nodo fin = cabeza;
+         while(fin.siguiente != null){
+                fin =fin.siguiente;
+         }
+         Nodo Actual = cabeza;
+         while(Actual.siguiente != fin){
+             Actual = Actual.siguiente;
+         }
+         
      
      
      
      
-     
-     
-     
+   }  
      
      
      

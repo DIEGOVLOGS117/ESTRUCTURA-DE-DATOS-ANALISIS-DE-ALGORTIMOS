@@ -193,10 +193,31 @@ public class Arbol {
      
         }
         
+    public void calculadingNivelyAltur(int numeritonodo){
         
+        Nodo nodorecorrearbulgud = raiz;
+        int contanivel = 0; // contador para el nviel
         
-        
-        
+        if(vacioArbolitogud()){
+            System.out.println("Su Arbol Esta Vacio ");
+            return;
+        } else{
+            
+            while(nodorecorrearbulgud != null){
+                if(numeritonodo < nodorecorrearbulgud.getDato()){
+                    System.out.println("Su Valor " + numeritonodo + " Esta En Su Arbol Posteriormente Se Procede A Calcular Nivel Y Altura");
+                    
+            }
+                System.out.println("Su Valor " + numeritonodo + "No Esta En Su Arbol");
+                
+                
+        }
+    }
+  
+    }
+    
+    
+    
     }
     
 
