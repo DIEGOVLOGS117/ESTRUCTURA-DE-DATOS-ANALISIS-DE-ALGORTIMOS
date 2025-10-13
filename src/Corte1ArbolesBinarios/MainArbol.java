@@ -10,13 +10,13 @@ public class MainArbol {
         arbolitogud.vacioArbolitogud();
 
         // Insertar nodos en el árbol (forma iterativa)
-        arbolitogud.insertarNodo(43);
+        
         arbolitogud.insertarNodo(10);
-        arbolitogud.insertarNodo(8);
-        arbolitogud.insertarNodo(54);
+        arbolitogud.insertarNodo(5);
         arbolitogud.insertarNodo(15);
-        arbolitogud.insertarNodo(50);
-        arbolitogud.insertarNodo(53);
+        arbolitogud.insertarNodo(2);
+        arbolitogud.insertarNodo(3);
+        arbolitogud.insertarNodo(7);
 
         // También puedes probar la inserción recursiva:
         // arbolitogud.insertarArbolRecursive(43);
@@ -63,7 +63,9 @@ public class MainArbol {
         
         System.out.println("================================================");
 
-
+        System.out.println("SUMA");
+        
+       arbolitogud.sumaElementosIzqyDerecha();
         
         
         

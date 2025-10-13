@@ -216,8 +216,41 @@ public class Arbol {
   
     }
        
-    
+    public void sumaElementosIzqyDerecha() {
+    if (vacioArbolitogud()) {
+        System.out.println("Su Árbol Está Vacío");
+        return;
     }
+
+    Nodo noditogud = raiz;
+
+    int sumaIzquierda = sumaSubarbol(noditogud.getHijoIzq());
+
+    int sumaDerecha = sumaSubarbol(noditogud.getHijoDerech());
+    
+    System.out.println("Suma De Elementos Del Subarbol Izquierdo: " + sumaIzquierda);
+    System.out.println("Suma De Elementos Del Subarbol Derecho: " + sumaDerecha);
+}
+    
+    public int sumaSubarbol(Nodo noditogud){
+        if(noditogud == null)
+            return 0;
+        return noditogud.getDato() + sumaSubarbol(noditogud.getHijoIzq()) + sumaSubarbol(noditogud.getHijoDerech());
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
     
 
 /* public Nodo eliminarNodoGud(int dato, Nodo nodo) {
