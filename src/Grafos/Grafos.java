@@ -79,27 +79,27 @@ public class Grafos {
     }
     
     
-    public void imprimirEnAnchura(int inicio){ //inici desde donde quiero arrancar a leer 
-
-           Queue<Integer> cola = new LinkedList<> (); // hago una cola de nodos 
-           
-           boolean [] visitado = new boolean [V];//creo un boleano donde todos losdatos seran falsos 
-           visitado[inicio]= true;//hago que los datos sean verdaderos 
-           cola.offer(inicio);//agrego elementos a mi cola 
-           
-           while (!cola.isEmpty()){
-               int u = cola.poll();
-               System.out.println(u + " ");
-               
-               for(int v : adj[u]){
-                   if(!visitado[v]){
-                       visitado[v] = true;
-                       cola.offer(v);
-                   }
-               }
-               }
-           
-    }
+//    public void imprimirEnAnchura(int inicio){ //inici desde donde quiero arrancar a leer 
+//
+//           Queue<Integer> cola = new LinkedList<> (); // hago una cola de nodos 
+//           
+//           boolean [] visitado = new boolean [V];//creo un boleano donde todos losdatos seran falsos 
+//           visitado[inicio]= true;//hago que los datos sean verdaderos 
+//           cola.offer(inicio);//agrego elementos a mi cola 
+//           
+//           while (!cola.isEmpty()){
+//               int u = cola.poll();
+//               System.out.println(u + " ");
+//               
+//               for(int v : adj[u]){
+//                   if(!visitado[v]){
+//                       visitado[v] = true;
+//                       cola.offer(v);
+//                   }
+//               }
+//               }
+//           
+//    }
                
 
 
