@@ -19,9 +19,7 @@ public class Main_Entendiendo_Grafos_ListasAdyacencia {
         graf.imprimirGrafo();
         System.out.println("BFS");
         graf.recorridoEnAnchuraBFS(0);
-        
-        
-        
+
         
     }
     
