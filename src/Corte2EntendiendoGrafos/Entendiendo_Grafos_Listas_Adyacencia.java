@@ -1,6 +1,7 @@
 package Corte2EntendiendoGrafos;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class Entendiendo_Grafos_Listas_Adyacencia {
     
@@ -39,7 +40,32 @@ public class Entendiendo_Grafos_Listas_Adyacencia {
     
 }    
     
-    
+    public void recorridoEnAnchuraBFS(int s) { // s = vértice de inicio
+        
+    boolean[] visited = new boolean[V]; // arreglo para marcar vértices visitados
+    Queue<Integer> q = new LinkedList<>(); // cola para el recorrido BFS
+
+    // Marcar el vértice inicial como visitado y agregarlo a la cola
+    visited[s] = true;
+    q.offer(s);
+
+    // Mientras la cola no esté vacía, seguimos recorriendo
+    while (!q.isEmpty()) {
+        // Sacamos (atendemos) el primer vértice de la cola
+        int u = q.poll();
+        System.out.print(u + " "); // mostramos el vértice actual
+
+        // Recorremos todos los vecinos (adyacentes) de u
+        for (int v : adj[u]) {
+            // Si el vecino no ha sido visitado
+            if (!visited[v]) {
+                visited[v] = true; // lo marcamos como visitado
+                q.offer(v);        // lo agregamos a la cola para procesarlo después
+            }
+        }
+    }
+}
+
     
     
     

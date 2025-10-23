@@ -1,6 +1,6 @@
 package Corte2EntendiendoGrafos;
 
-public class Main_Entendiendo_Grafos {
+public class Main_Entendiendo_Grafos_MatrizAdyacencia {
     
     public static void main(String[] args) {
         
@@ -12,9 +12,6 @@ public class Main_Entendiendo_Grafos {
         grafitos.agregarAristasGrafos(3, 0);
          
         grafitos.imprimirGrafo();
-        
-        
-        
         
         
     }
