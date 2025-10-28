@@ -22,6 +22,7 @@ public class Burbuja {
     }
     
     public void ordenaditoDeLaOtraFormaSeleccion(int [] vector){
+        
         int temporalcito;
         int posiminimactual;                     // actualiza y cuando tengo vector[lo de aca es el valor]
         
@@ -40,4 +41,48 @@ public class Burbuja {
         }
     }
     
+    public void OrdenaditoDeLa2OtraFormaInsercion(int [] vector){
+        
+        int temporalcito;
+        int posiciontemp;
+        
+        for (int i = 0; i < vector.length-1; i++){
+            posiciontemp = i;
+        for (int j = i+1; j < vector.length; j++){
+        if(vector[j] < vector[posiciontemp]){
+                posiciontemp = j;
+            }  
+        }
+        
+    
+
+        
+        }        
+        }
+        
+        
+    }
+    
+    
+    
+    
+    /* public void ordenamientoPorInsercion(int[] vector) {
+    int temporal, j;
+
+    for (int i = 1; i < vector.length; i++) {
+        temporal = vector[i];
+        j = i - 1;
+
+        // Mueve los elementos mayores que 'temporal' una posición adelante
+        while (j >= 0 && vector[j] > temporal) {
+            vector[j + 1] = vector[j];
+            j--;
+        }
+
+        // Inserta el elemento en su posición correcta
+        vector[j + 1] = temporal;
+    }
 }
+*/
+    
+    
