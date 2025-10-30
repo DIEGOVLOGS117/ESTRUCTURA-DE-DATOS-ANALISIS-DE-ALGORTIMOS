@@ -42,7 +42,7 @@ public class Burbuja {
     }
     
     public void OrdenaditoDeLa2OtraFormaInsercion(int [] vector){
- 
+ /*HUECO QUE ABRO ENTRE POSICIONES ORDENADAS DONDE SE METE EL ELEMENTO SE INICIALIZA EN EL PRIMER ELEMENTO 1*/
         for (int i = 1; i < vector.length; i++){
             int temp = vector[i]; // le asigno el valor del vector
             int posiciontemp = i; // solo coge la posicion por eso usa el i
