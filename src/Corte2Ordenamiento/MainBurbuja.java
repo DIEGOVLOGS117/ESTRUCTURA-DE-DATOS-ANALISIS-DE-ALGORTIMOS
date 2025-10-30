@@ -22,7 +22,19 @@ public class MainBurbuja {
         burbugud.ordenaditoDeLaOtraFormaSeleccion(vector);
         burbugud.imprimirVector(vector);
         
+        System.out.println();
         
+        System.out.println("Vector Ordenado Por Insercion ");
+        burbugud.OrdenaditoDeLa2OtraFormaInsercion(vector);
+        burbugud.imprimirVector(vector);
+        
+        System.out.println();
+        
+        System.out.println("Obteniendo Longitud Del Vector La Cual Es: " + vector.length + " Longitud Del Tamanho");
+         
+        System.out.println("Vector Ordenado Por ShellSort ");
+        burbugud.OrdenaditoDeLa3OtraFormaShellSort(vector);
+        burbugud.imprimirVector(vector);
         
         
         

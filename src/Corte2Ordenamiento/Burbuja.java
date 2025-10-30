@@ -14,6 +14,7 @@ public class Burbuja {
 }
 }     
 }
+    
     public void imprimirVector (int [] vector){
         for (int i = 0; i < vector.length; i++){
             System.out.print( "["+ vector [i] + "]");
@@ -55,13 +56,24 @@ public class Burbuja {
         }           
     }
     
-    
-    
-    
-    
-    
-    
-    
+    public void OrdenaditoDeLa3OtraFormaShellSort(int [] vector){ // for sume de a 4 de acuerdo al tamaño de la ventana
+        
+        int tamanho = vector.length;
+
+        for(int gapcito = tamanho/2; gapcito > 0; gapcito /=2){
+            
+            for(int i = 0; i < vector.length; i++){
+        int temp = vector[i];
+        int j;
+                    // Inserción con salto
+            for (j = i; j >= gapcito && vector[j - gapcito] > temp; j -= gapcito) {
+                vector[j] = vector[j - gapcito];
+
+        }
+                    vector[j] = temp;
+        } 
+    }   
+ } 
     
     
     
@@ -70,6 +82,52 @@ public class Burbuja {
     
     
  }  
+
+
+
+/*public void OrdenaditoDeLa3OtraFormaShellSort(int[] vector) {
+    int n = vector.length;
+
+    // Empieza con un gap grande y lo reduce
+    for (int gap = n / 2; gap > 0; gap /= 2) {
+        for (int i = gap; i < n; i++) {
+            int temp = vector[i];
+            int j;
+
+            // Inserción con salto
+            for (j = i; j >= gap && vector[j - gap] > temp; j -= gap) {
+                vector[j] = vector[j - gap];
+            }
+
+            vector[j] = temp;
+        }
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* public void ordenamientoPorInsercion(int[] vector) {
     int temporal, j;
@@ -89,3 +147,4 @@ public class Burbuja {
     }
 }
 */
+
