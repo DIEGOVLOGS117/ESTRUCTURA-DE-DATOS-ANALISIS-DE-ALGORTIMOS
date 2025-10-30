@@ -42,30 +42,35 @@ public class Burbuja {
     }
     
     public void OrdenaditoDeLa2OtraFormaInsercion(int [] vector){
-        
-        int temporalcito;
-        int posiciontemp;
-        
-        for (int i = 0; i < vector.length-1; i++){
-            posiciontemp = i;
-        for (int j = i+1; j < vector.length; j++){
-        if(vector[j] < vector[posiciontemp]){
-                posiciontemp = j;
-            }  
-        }
-        
-    
+ 
+        for (int i = 1; i < vector.length; i++){
+            int temp = vector[i]; // le asigno el valor del vector
+            int posiciontemp = i; // solo coge la posicion por eso usa el i
 
-        
-        }        
-        }
-        
-        
+            while(posiciontemp > 0 && vector[posiciontemp-1] > temp){
+                vector[posiciontemp] = vector[posiciontemp-1];
+                posiciontemp = posiciontemp-1;   
+            }
+            vector[posiciontemp] = posiciontemp;  
+        }           
     }
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ }  
+
     /* public void ordenamientoPorInsercion(int[] vector) {
     int temporal, j;
 
@@ -84,5 +89,3 @@ public class Burbuja {
     }
 }
 */
-    
-    
