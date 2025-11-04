@@ -75,13 +75,50 @@ public class Burbuja {
     }   
  } 
     
-    
-    
-    
-    
-    
-    
- }  
+   public void OrdenaditoDeLa4OtraFormaCountingSort(int [] vector){
+       
+       int tamanho = vector.length;
+       int min = vector[0];
+       int max = vector[0];
+       
+        for (int i = 1; i < tamanho; i++){ // recorrer el vector
+            if (vector [i] > max){
+                max = vector[i];
+            }if(vector [i] < min){
+                min = vector [i];
+            }
+        }
+        
+        // vector de conteo
+        
+        int vectorAuxRango = max - min + 1;
+        int[] count = new int[vectorAuxRango];
+        
+        //contar concurrencias
+        for (int i = 0; i < tamanho; i++) {
+        count[vector[i] - min]++;
+    }
+        
+     int index = 0;
+    for (int i = 0; i < vectorAuxRango; i++) {
+        while (count[i] > 0) {
+            vector[index++] = i + min;
+            count[i]--;
+        }
+    }    
+}   
+  
+   public void OrdenaditoDeLa5OtraFormaRadixSort(int [] vector){
+       
+   }
+   
+   
+   
+   
+   
+   
+   
+}  
 
 
 
@@ -105,30 +142,6 @@ public class Burbuja {
 }
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* public void ordenamientoPorInsercion(int[] vector) {
     int temporal, j;
 
@@ -147,4 +160,3 @@ public class Burbuja {
     }
 }
 */
-
