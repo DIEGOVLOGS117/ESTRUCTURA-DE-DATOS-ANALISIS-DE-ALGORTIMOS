@@ -81,7 +81,7 @@ public class Burbuja {
        int min = vector[0];
        int max = vector[0];
        
-        for (int i = 1; i < tamanho; i++){ // recorrer el vector
+        for (int i = 0; i < tamanho; i++){ // recorrer el vector
             if (vector [i] > max){
                 max = vector[i];
             }if(vector [i] < min){
@@ -109,8 +109,92 @@ public class Burbuja {
 }   
   
    public void OrdenaditoDeLa5OtraFormaRadixSort(int [] vector){
+         
+// sacar para unidades modulo de 100 lo unico que cambiara es cuando divide
+
+   OrdenaditoDeLa4OtraFormaCountingSortParaRadixSort(vector);
+      
+   int unidades = 1;
+   int decenas = 10;
+   int centenas = 100;
+   
+    
        
-   }
+       
+       
+       
+       
+        
+       
+}
+   
+   
+   public void OrdenaditoDeLa4OtraFormaCountingSortParaRadixSort(int [] vector){
+       
+       int tamanho = vector.length;
+       int min = vector[0];
+       int max = vector[0];
+       
+        for (int i = 0; i < tamanho; i++){ // recorrer el vector
+            if (vector [i] > max){
+                max = vector[i];
+            }if(vector [i] < min){
+                min = vector [i];
+            }
+        }
+        
+        // vector de conteo
+        
+        int vectorAuxRango = max - min + 1;
+        int[] count = new int[vectorAuxRango];
+        
+        //contar concurrencias
+        for (int i = tamanho; i > 0; i--) {
+        count[vector[i] - min]--;
+    }
+        
+     int index = 0;
+    for (int i = 0; i < vectorAuxRango; i++) {
+        while (count[i] > 0) {
+            vector[index++] = i + min;
+            count[i]--;
+        }
+    }    
+} 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
    
    
    
@@ -119,9 +203,6 @@ public class Burbuja {
    
    
 }  
-
-
-
 /*public void OrdenaditoDeLa3OtraFormaShellSort(int[] vector) {
     int n = vector.length;
 
